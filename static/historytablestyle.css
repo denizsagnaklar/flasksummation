@@ -1,0 +1,54 @@
+html, body{ margin: 0px; padding: 0px; }
+
+body{
+    background-color: white;
+    font-family:'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+nav{
+    display: inline-block;
+    width: 100%;
+    height: 10em;
+    white-space: nowrap;
+}
+.image{
+    float: left;
+}
+.logo{
+    height: 7.4em;
+    width: 52%;
+    margin-left: 1.08em;
+}
+.back{
+    float: right;
+    margin:0;
+}
+.backtosum{
+    background-color: #ec753f; 
+    width: 15.0em;
+    height: 4.0em;
+    font-size: 1.0em;
+    margin-top: 1.0em;
+    margin-right: 1.0em;
+    color: white;
+}
+.history{
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    text-align: center;  
+}
+.history td{
+    padding: 2%;
+}
+.history th{
+    padding: 3%;
+    text-decoration: underline;
+    color: #ec753f;
+}
+table, th, td {
+    border: 1px solid #02263e;
+    border-collapse: collapse;
+}

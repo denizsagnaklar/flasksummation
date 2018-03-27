@@ -1,0 +1,76 @@
+html, body{ margin: 0px; padding: 0px; }
+
+body{
+    background-color: white;
+    font-family:'Roboto', sans-serif;
+}
+nav{
+    display: inline-block;
+    width: 100%;
+    height: 10em;
+    white-space: nowrap;
+}
+.image{
+    float: left;
+}
+.logo{
+    height: 6.7em;
+    width: 52%;
+    margin-left: 1.08em;
+}
+.back{
+    float: right;
+    margin:0;
+}
+.backtosum{
+    background-color: #ec753f; 
+    width: 15.0em;
+    height: 4.0em;
+    font-size: 1.0em;
+    margin-top: 1.0em;
+    margin-right: 1.0em;
+    color: white;
+}
+.sumform{
+    text-align: center;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: -3%;
+}
+.elt{
+    padding:3%;
+    display: block;
+    width: 18%;
+    height: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #white;
+}
+
+.addhist{
+    background-color: #ec753f; 
+    width: 18%;
+    height: 2.5em;
+    font-size: 0.9em;
+    margin: 3% 4%;
+
+}
+
+h3{
+    color: white;
+}
+
+.resultbox{
+   background-color: #02263e;
+   width: 44.5%;
+   height: 2.5em;
+   line-height: 2.5em;
+   color: white;
+   margin-left: auto;
+   margin-right: auto;
+   text-align:center;
+
+}
+.label{
+    padding-bottom: 15%;
+}

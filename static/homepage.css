@@ -1,0 +1,52 @@
+html, body{ margin: 0px; padding: 0px; }
+
+body{
+    background-color: white;
+    font-family:'Roboto', sans-serif;
+}
+header{}
+
+.addhist{
+    background-color: #ec753f; 
+    width: 18%;
+    height: 2.5em;
+    font-size: 0.9em;
+    margin: 3% 4%;
+
+}html, body{ margin: 0px; padding: 0px; }
+
+body{
+    background-color: white;
+    font-family:'Roboto', sans-serif;
+    color: #02263e;
+}
+header{}
+
+.addhist{
+    background-color: #ec753f; 
+    width: 15.0em;
+    height: 4.0em;
+    font-size: 1.0em;
+    margin-top: 15%;
+    color: white;
+
+}
+.home{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message{
+    margin-top: 5.0em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.hi{
+    color: #ec753f;
+    text-align: center;
+}

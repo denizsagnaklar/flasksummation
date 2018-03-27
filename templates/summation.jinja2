@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='summationstyle.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <body>
+        <nav> 
+              <div class="image"><img class="logo" src="/static/logo.jpg"></div>
+              <div class="back"> <button class="backtosum" type="button" onclick="window.location.href='{{ url_for('index') }}';">Back to Info Page</button>
+        </nav>
+        <div class="sumform">
+        	<form method="post" action="{{ url_for('summation') }}">
+            {{ form.hidden_tag() }}
+
+            <div class="elt"> <div class="label">{{ form.first.label }}</div> {{ form.first() }} </div>
+            <div class= "elt"> <div class="label">{{ form.second.label }}</div> {{ form.second() }} </div>
+
+            <div class="options">
+                <input class= "addhist" type="submit" value="Add"/>
+                <button class="addhist" type="button" onclick="window.location.href='{{ url_for('history') }}';">Display History</button>
+            </div>
+
+        	</form>
+        	<div class="resultbox">
+            	{% if result %}
+                	Result is: {{ result }}
+               	{% endif %}
+           </div>
+         </div>
+         
+    </body>
+</html>

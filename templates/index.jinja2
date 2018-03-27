@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='homepage.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <body>
+        <div class="message">
+        	<p> <div class="hi"> Hi Michael Brunetti & the rest of the YJT Solutions team! </div> <br><br><br>
+        		Please click the button below to access the simple flask web site I built that can add two numbers together.<br><br>
+        		This website is able to sum positive and negative numbers, including decimals, but will not respond to any string input. Data validation is done on the server side using WTForms validators. <br><br>
+        		In the background, the webserver is storing the history of calculations in a PostgreSQL database including the input fields, result field, and the time that the request took place.<br><br>
+        		You can display a history of past requests by simply clicking the "Display History" button in the calculator page.
+
+        </div>
+
+        <div class='home'>
+        	<button class="addhist" type="button" onclick="window.location.href='{{ url_for('summation') }}';">Start Adding!</button>
+        </div>
+    </body>
+</html>

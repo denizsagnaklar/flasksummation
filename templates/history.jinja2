@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='historytablestyle.css')}}">
+</head>
+
+<nav> 
+  <div class="image"><img class="logo" src="/static/logo.jpg"></div>
+  <div class="back"> <button class="backtosum" type="button" onclick="window.location.href='{{ url_for('summation') }}';">Back to Summation</button>
+</nav>
+
+<body>
+<table class="history">
+  <tr>
+    <th>First Number</th>
+    <th>Second Number</th> 
+    <th>Result</th>
+    <th>Timestamp</th>
+  {% for calc in myCalcs %}
+	<tr> 
+		<td> {{ calc.first_number }} </td>
+		<td> {{ calc.second_number }} </td> 
+		<td> {{ calc.result }} </td> 
+    <td> {{ calc.timestamp }} </td> 
+	</tr>
+  {% endfor %}
+  
+</table>
+
+<footer></footer>
+</body>
+</html>
